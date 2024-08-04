@@ -7,7 +7,7 @@ dotenv.config({path: './config/config.env'})
 connectDatabase();
 
 function checkStatuses() {
-	fetch('http://raspberrypi.local:4001/api/v1/device/update-status')
+	fetch('https://shelf-sense-backend.onrender.com/api/v1/device/update-status')
 	  .then(response => response.json())
 	  .then(data => {
 		console.log('Statuses updated:', data);
