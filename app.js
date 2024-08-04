@@ -33,7 +33,7 @@ app.use('/api/v1',barcode);
 app.use('/api/v1',cans);
 app.use('/api/v1', bottle);
 app.use('/api/v1', rice);
-app.use('/api/v1', device);
+// app.use('/api/v1', device);
 
 
 module.exports = app;
